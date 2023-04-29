@@ -16,7 +16,7 @@ func CekArr (array1 []string, array2 []string){
             }
         }
         if isSame {
-            fmt.Println("Kedua array memiliki indeks yang sama")
+            fmt.Println("Kedua array memiliki value tiap indeks yang sama")
         }
     }
 }
@@ -53,9 +53,5 @@ func main() {
     }
 
     // cek apakah array sama atau tidak
-	if len(arr1) != len(arr2) {
-        fmt.Println("Panjang kedua array tidak sama")
-    } else {
-		CekArr(arr1, arr2)
-	}
+	CekArr(arr1, arr2)
 }
