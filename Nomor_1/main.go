@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func total(nums ...int) int {
+func total(items ...int) int {
 	jumlah := 0
-	for _, num := range nums {
-		jumlah += num
+	for _, item := range items {
+		jumlah += item
 	}
 	return jumlah
 }
