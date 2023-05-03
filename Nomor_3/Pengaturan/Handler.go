@@ -13,10 +13,6 @@ type Mahasiswa struct {
 	Alamat string `json:"Alamat"`
 }
 
-/* Deklarasi array of struct data dengan format dari struct Mahasiswa
- * variable ini bertujuan menampung beberapa 'data' dari var simpan mahasiswa.
- *
- * Ini menggunakan penyimpanan sederhana Jadi, ketika program di hentikan, maka data akan hilang. */
 var data []Mahasiswa
 
 func Create(response http.ResponseWriter, request *http.Request) {
