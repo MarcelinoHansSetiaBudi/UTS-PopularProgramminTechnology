@@ -10,11 +10,9 @@ import (
 
 func main() {
 	
-	// Set port untuk menjalankan program berdasarkan port yang telah diset!
 	const port = ":5050"
 	fmt.Printf("\n Link Server: localhost%s", port)
 
-	// Set variable router untuk menampung object dari NewRouter
 	router := mux.NewRouter()
 	router.HandleFunc("/create", Pengaturan.Create).Methods("POST")
 	router.HandleFunc("/showAll", Pengaturan.Baca).Methods("GET")
