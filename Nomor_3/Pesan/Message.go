@@ -1,15 +1,11 @@
 package Pesan
 
 import (
-	/* library OS disini saya gunakan untuk exit -> os.Exit(0) dengan return code 0
-	 * Karena ini log, jadi error sudah di print, tidak perlu return code 1. */
 	"os"
 
 	"fmt"
 	"time"
 
-	/* library color dari github.com/fatih ini berfungsi untuk pewarnaan pada console
-	 * berfungsi untuk memberikan warna pada error */
 	"github.com/fatih/color"
 )
 
@@ -18,7 +14,6 @@ import (
  
 func Psn(opt int, msg string) {
         now := time.Now()
-		// Set variable warna dengan red, untuk mempermudah pemanggilan.
 		red := color.New(color.FgHiRed)
 
         fmt.Printf(" [%s] ", now.Format("15:04:05 2006/01/02"))
